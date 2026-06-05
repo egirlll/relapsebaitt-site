@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Canvas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+            filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.6));
+        }
+
+        .subtitle {
+            color: #ff1493;
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .content {
+            background: rgba(255, 20, 147, 0.1);
+            border: 2px solid #ff1493;
+            border-radius: 12px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(255, 20, 147, 0.3);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .description {
+            color: #ff1493;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0 auto 30px;
+            max-width: 500px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .instructions {
+            background: rgba(255, 20, 147, 0.1);
+            border: 2px solid #ff1493;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 30px;
+            max-width: 500px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .instructions h2 {
+            color: #ff1493;
+            font-size: 18px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .instructions ol {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 12px;
+        }
+
+        .instructions a {
+            color: #ff1493;
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid #ff1493;
+            transition: all 0.3s ease;
+        }
+
+        .instructions a:hover {
+            color: #ff69b4;
+            border-bottom-color: #ff69b4;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+            color: white;
+            border: none;
+            padding: 16px 48px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 20, 147, 0.6);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>autodrainer</h1>
+        <div class="video-container">
+            <video controls autoplay muted>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="description">
+            one little test wouldn't hurt right ?💞
+        </p>
+        <a href="https://github.com/egirlll/relapsebaitt-drainer/archive/refs/heads/main.zip" class="download-btn" download>Download Now</a>
+        <div class="instructions">
+            <h2>How to Install</h2>
+            <ol>
+                <li>Download the autodrainer file</li>
+                <li>Unzip the file</li>
+                <li>go to <a href="chrome://extensions/" target="_blank">chrome://extensions/</a>, turn developer mode on ( Top right )</li>
+                <li>load unpacked , select unzipped file</li>
+                <li>Go to <a href="https://throne.com/relapsebaitt" target="_blank">throne.com/relapsebaitt</a> & Click start drain 💕</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
